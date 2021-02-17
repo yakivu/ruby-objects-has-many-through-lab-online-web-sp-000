@@ -1,25 +1,4 @@
-require "spec_helper"
 
-
-describe "Artist" do
-
-  describe "#name" do
-    it "has a name" do
-      jay_z = Artist.new("Jay-Z")
-
-      expect(jay_z.name).to eq("Jay-Z")
-    end
-  end
-
-  describe ".all" do
-    it "knows about all artist instances" do
-      jay_z = Artist.new("Jay-Z")
-      kendrick = Artist.new("Kendrick Lamar")
-
-      expect(Artist.all).to include(jay_z)
-      expect(Artist.all).to include(kendrick)
-    end
-  end
 
   describe "#songs" do
     it "returns all songs associated with this Artist" do
